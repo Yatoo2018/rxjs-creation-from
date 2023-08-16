@@ -59,7 +59,7 @@ const iterator = generateDoubles(3);
 // from转换
 const result = from(iterator).pipe(
   // 这里用到了take操作符，因为iterator对象是一个无限迭代器，故流中的数据项将源源不断;
-  // 使用takc拿流中的10个数据流项，并把流完成
+  // 使用takc拿流中的10个流数据项，并把流完成
   take(10)
 );
 
